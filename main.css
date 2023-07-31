@@ -10,18 +10,18 @@ button {
 }
 
 @font-face {
-    font-family: "TT Lakes";
-    src: url('./TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-family: TT;
+    src: url('/TTLakes/TTLakes-Regular.ttf') format('truetype');
     font-weight: 400;
 }
 @font-face {
-    font-family: "TT Lakes";
-    src: url("./TTLakes/TTLakes-Medium.ttf") format("truetype");
+    font-family: TT;
+    src: url("/TTLakes/TTLakes-Medium.ttf") format("truetype");
     font-weight: 500;
 }
 @font-face {
-    font-family: "TT Lakes";
-    src: url("./TTLakes/TTLakes-Bold.ttf") format("truetype");
+    font-family: TT;
+    src: url("/TTLakes/TTLakes-Bold.ttf") format("truetype");
     font-weight: 700;
 }
 
@@ -29,7 +29,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     color: #1B1C21;
-    font-family: "TT Lakes";
+    font-family: TT;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -121,11 +121,6 @@ h1 {
     align-items: center;
 }
 
-.categories p {
-    display: none;
-    text-align: left;
-}
-
 .categories__list {
     display: flex;
     flex-direction: row;
@@ -141,11 +136,11 @@ h1 {
     display: none;
 }
 
-.categories__item {
+.categories__btn{
     width: 248px;
 	height: 40px;
     text-align: center;
-    padding: 10px 15px;
+    padding: 8px 9px 8px 15px;
     font-size: 16px;
     font-weight: 500;
     color: #7E7E82;
@@ -154,12 +149,21 @@ h1 {
 .chat, .profile, .call {
     display: none;
 }
-.categories__item:hover {
+.categories__btn:hover {
     background: #FFFFFF;
 	border-radius: 6px;
-    padding-top: 8px;
 	border: 2px solid #B8FFEC;
 }
+
+.vanish {
+    display: none;
+    text-align: left;
+    padding-left: 36px;
+}
+.vanish:hover {
+    padding-left: 34px;
+}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -235,9 +239,9 @@ h1 {
     #break {
         display: none;
     }
-    .categories p {
+    .vanish {
         display: inline-block;
-        width: fit-content;
+        /* width: fit-content; */
     }
     .cps__img img {
         min-width: 531.346px;
